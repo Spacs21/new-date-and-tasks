@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styke.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="assets/3625773-uhd_4096_2160_25fps (1).mp4" type="video/mp4">
+            Sizning brauzeringiz video formatini qo'llab-quvvatlamaydi.
+        </video>
+    </div>
+    <div class="container">
+        <div class="content">
+            <header>
+                <h1>JavaScript Sana Haqida</h1>
+            </header>
+            <main>
+                <section class="introduction">
+                    <h2>JavaScript `new Date` Funktsiyasi</h2>
+                    <p>
+                        JavaScriptdagi `new Date` funksiyasi vaqtni ifodalash uchun ishlatiladi. Bu funksiya sizga joriy sana va vaqtni olish imkonini beradi, shuningdek, siz sanani yaratishingiz va vaqtni boshqarishingiz mumkin.
+                    </p>
+                </section>
+                <section class="example">
+                    <h2>Misol</h2>
+                    <p>
+                        Quyidagi misolda `new Date` funksiyasini qanday ishlatishni ko'rsatamiz:
+                    </p>
+                    <pre><code>let sana = new Date();</code></pre>
+                    <p>
+                        Bu kod joriy sanani va vaqtni `sana` o'zgaruvchisiga saqlaydi. Agar siz sanani aniq formatda ko'rsatmoqchi bo'lsangiz, misol uchun:
+                    </p>
+                    <pre><code>let sana = new Date(2024, 7, 30); // 2024-yil 30-avgust</code></pre>
+                    <p>
+                        Bu kod 2024-yil 30-avgust sanasini yaratadi.
+                    </p>
+                </section>
+                <section class="code-output">
+                    <h2>Kodning Natijasi</h2>
+                    <p id="date-output">Sanani yuklash uchun kuting...</p>
+                    <button onclick="showCode()">codni korish</button>
+                </section>
+            </main>
+        </div>
+    </div>
+    <img src="assets/image copy 3.png" id="code" onclick="closeCode()">
+    <script src="app.js"></script>
+</body>
+</html>

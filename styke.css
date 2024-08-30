@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+pre {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    color: #00ff00;
+}
+
+#date-output {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#code{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    width: 50%;
+    height: auto;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover{
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+button:active{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transform: scale(0.95);
+}
+
+@media (max-width: 1200px) {
+    #code{
+        transform: translate(-50%, -1000%);
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    pre {
+        padding: 5px;
+    }
+
+    #code {
+        width: 90%;
+        height: auto;
+        transform: translate(-50%, -1000%);
+    }   
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
